@@ -7,10 +7,9 @@
 # - [2, 3, 4, 5, 6] => [12, 15, 16];
 # - [2, 3, 5, 6] => [12, 15]
 
-
 def mult(lst):
-    l = len(lst)//2 + 1  if len(lst) % 2 != 0 else len(lst)//2  # //-целочисленное деление
-    new_lst = [lst[i]*lst[len(lst)-i-1] for i in range(l)]
+    l = len(lst)//2 + 1  if len(lst) % 2 != 0 else len(lst)//2  # //-целочисленное деление,пройтись в цикле от 0 до length / 2 + 1 (до половины массива)
+    new_lst = [lst[i]*lst[len(lst)-i-1] for i in range(l)] #умножить числа одинаково удаленных от начала и конца списка между собой 
     print(new_lst)
 
 lst = []
