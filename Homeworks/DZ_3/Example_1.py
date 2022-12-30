@@ -6,7 +6,7 @@
 
 
 
-def summa_nech_positions(numbers): #def-помогает сообщить что мы вызываем функцию
+def summa_nech_positions(numbers): #def-помогает сообщить что мы делаем метод
     s = 0
     for i in range(len(numbers)): #Узнать количество символов (длину строки) можно при помощи функции len 
         if i % 2 != 0:
